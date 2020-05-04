@@ -4,7 +4,7 @@ const Project = require("../data/models/projectsModel");
 
 const router = express.Router();
 
-// ** A D D ** P R O J E C T S
+
 router.post("/", (req, res) => {
   const projectData = req.body;
 
@@ -21,7 +21,7 @@ router.post("/", (req, res) => {
     });
 });
 
-// ** R E T R I E V E  ** P R O J E C T S
+
 
 router.get("/", (req, res) => {
   Project.getProjects()

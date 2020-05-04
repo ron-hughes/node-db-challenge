@@ -4,7 +4,7 @@ const Resource  = require("../data/models/resourcesModel");
 
 const router = express.Router();
 
-// ** A D D ** R E S O U R C E S
+
 router.post("/", (req, res) => {
   const resourceData = req.body;
 
@@ -21,7 +21,7 @@ router.post("/", (req, res) => {
     });
 });
 
-// ** R E T R I E V E  ** R E S O U R C E S
+
 
 router.get("/", (req, res) => {
   Resource.getResources()
