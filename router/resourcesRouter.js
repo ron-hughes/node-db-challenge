@@ -40,7 +40,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   const { id } = req.params;
 
-  Resources.getResourceById(id).then(Resource => {
+  Resource.getResourceById(id).then(Resource => {
     if (Resource) {
       res.json(Resource);
     } else {
