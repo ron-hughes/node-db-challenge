@@ -40,7 +40,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   const { id } = req.params;
 
-  Projects.getProjectById(id).then(project => {
+  Project.getProjectById(id).then(project => {
     if (project) {
       res.json(project);
     } else {
